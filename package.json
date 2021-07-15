@@ -1,0 +1,27 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules//.bin//cypress open",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "LoginTest": "npm run test -- --spec \"cypress/integration/LoginTestCases/*\" --headed",
+    "cucumberTest": "npm run test -- --spec \"cypress/integration/1-getting-started/BDD/login/login.feature\" --headed --browser chrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.6.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.1.4",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^1.6.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+
+}

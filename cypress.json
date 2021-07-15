@@ -1,0 +1,17 @@
+{
+  "defaultCommandTimeout": 8000,
+  "pageLoadTimeout": 10000,
+  "script": {
+    "cy:run": "cypress run"
+  },
+  "env": {
+    "url": "https://www.rahulshettyacademy.com"
+  },
+  "projectId": "nmqjmk",
+  "testFiles": "**/*.feature",
+  "retries": {
+    "runMode": 0
+  }
+
+
+}
